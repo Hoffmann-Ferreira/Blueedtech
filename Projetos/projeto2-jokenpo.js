@@ -15,7 +15,7 @@ while (true) {
         console.log("Obrigado, quando quiser jogar inicie novamente o programa");
         break;
 
-    } else if (jogo != "sim" || "nao") {
+    } else if (jogo != "sim" || jogo != "nao") {
         console.log(`Digite apenas SIM ou NAO.`);
         console.log("\n")
     };
