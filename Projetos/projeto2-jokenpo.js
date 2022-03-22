@@ -1,5 +1,4 @@
 
-
 let prompt = require("prompt-sync")();
 let jogo;
 // estrutura while de controle, para acesso ao jogo;
@@ -7,13 +6,13 @@ while (true) {
     console.log("\n");
 
     jogo = prompt("Olá, está preparado para jogar? Digite SIM para jogar e NAO para sair ").toLowerCase();
+    console.log("\n");
 
     if (jogo === "sim") {
         break;
 
     } else if (jogo === "nao") {
         console.log("Obrigado, quando quiser jogar inicie novamente o programa");
-        console.log("\n");
         break;
 
     } else if (jogo != "sim" || "nao") {
@@ -129,17 +128,17 @@ while (jogo === "sim") {
         };
     };
     //Análise dos resultados para determinar o campeão
-    if (jogador > computador) {
+    if (jogador > compu) {
         console.log(`Parabéns ${nome} você é o grande campeão!
         Ganhou ${jogador} vezes, contra ${compu} vezes do computador!`);
         console.log("\n");
 
-    } else if (jogador < computador) {
+    } else if (jogador < compu) {
         console.log(`Vitória do COMPUTADOR, com ${compu} vitórias!
          ${nome} você ganhou apenas ${jogador} vezes!`);
         console.log("\n");
 
-    } else {
+    } else if (empate > jogador && empate > compu) {
         console.log(`Temos um EMPATE! ${nome} você ganhou ${jogador},
         e o COMPUTADOR gahou ${compu}.`);
         console.log("\n");
