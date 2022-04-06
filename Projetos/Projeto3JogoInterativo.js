@@ -48,6 +48,7 @@ let max = {
             this.sanidade = 100;
         };
     },
+    /*permitido números negativos, com intuíto de punir o usuário, uma vez que o numero negativo irá diminur a vida dele no total, pois na conta da vida ira subtrair o valor da outra propriedade*/
     alteraVida: function () {
         this.vida = this.sanidade + this.energia;
     },
